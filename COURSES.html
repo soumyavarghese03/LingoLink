@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB WIZARDS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+     <nav>
+      
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./About.html">ABOUT</a></li>
+                <li><a href="./COURSES.html">COURSES</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"> </i>
+     </nav>
+     <h1>COURSES</h1>
+    </section>
+   <!---------------------Course--------------->
+
+   <<section class="course">
+    <h1>Popular courses</h1>
+    
+    <div class="row">
+        <div class="course-col">
+            <h3>FLEXBOX FROGGY</h3>
+            <p>Want to learn about flexbox,Enhance your coding skills and grasp the fundamentals of CSS Flexbox with Flexbox Froggy, the fun and interactive way to learn web layout techniques.
+                <a href="https://flexboxfroggy.com/">Click here</a>
+            </p>
+        </div>
+        <div class="course-col">
+            <h3> CSS GRID</h3>
+            <p>Master the art of responsive web design with CSS Grid, where you'll create beautiful layouts and adapt your content seamlessly across different devices.
+                <br><a href="">Click here</a>
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>PORTUGUESE </h3>
+            <p>Embark on a language journey with Duolingo and discover the richness of Portuguese, where vibrant culture meets beautiful expressions.
+                <br><a href="https://www.duolingo.com/">Click here</a>
+            </p>
+        </div>
+    </div>
+
+   </section>
+
+   
+
+   
+    <!---------------------Footer--------------->
+    
+    
+    
+    
+    
+    
+    <section class="footer">
+        <div class="foot"><h4>Follow Us</h4>
+            <p>Stay connected with us on social media to receive updates, language learning tips, and exclusive offers.</p>
+          <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+       
+
+          </div>
+          </div>
+        </section>
+
+   
+
+
+    <!--------Javascript for Toggle Menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+
+</body>
+</html>
